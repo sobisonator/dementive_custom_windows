@@ -1,0 +1,58 @@
+types Base_GUI_Types
+{
+	type trade_goods_widget = widget {
+		# Size needed
+		minimumsize = { 0 32 }
+		
+		hbox = {
+			
+			widget = {
+				size = { 4 4 }
+				layoutpolicy_horizontal = fixed
+			}
+			
+			icon = {
+				#position = { 0 0 }
+				framesize = { 50 50 }
+				size = { 34 34 }
+				layoutpolicy_horizontal = fixed
+				
+				block "Icon"
+				{
+					texture = "gfx/interface/icons/shared_icons/leader.dds"
+				}
+			}
+
+			widget = {
+				size = { 4 4 }
+				layoutpolicy_horizontal = fixed
+			}
+			
+			widget = {
+				size = { 0 24 }
+				layoutpolicy_horizontal = expanding
+				
+				textbox = {
+					name = "Text"
+					position = { 0 1 }
+					size = { 100% 24 }					
+					align = right|nobaseline
+					elide = right
+					using = BaseFontM
+					using = Black_FontColor
+					fontsize_min = 14
+					block "Text"
+					{
+						
+						text = "888.88%"
+					}
+				}
+			}
+			
+			widget = {
+				size = { 6 6 }
+				layoutpolicy_horizontal = fixed
+			}			
+		}
+	}
+}
