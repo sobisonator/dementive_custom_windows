@@ -17,7 +17,6 @@ This makes is so:
 	3. The performance impact of making a custom window is made negligible by this system compared to other methods.
 
 Im going to list out some steps that you can take to adapt the example I've made.
-
 	1. Open the eventwindow.gui and scroll down to the 2nd window named "major_event_window". This is where your custom windows will go.
 	2. Make a event that sets a variable in the immediate this for example: "window_1". Also remove the variable when the option is clicked.
 	3. Make a scripted gui that checks for that variable in the is_valid field.
@@ -27,9 +26,6 @@ Im going to list out some steps that you can take to adapt the example I've made
 
 There are some small bugs that I know of with the custom windows:
 	1. Opening the window will pause the game because it is literally an event.
-
 	2. Using the escape key will not close the window, again because that's how events work. However, it works with BUI because events can be closed with enter in BUI so there is a way to fix it.
-
 	3. The horizontal size can't be changed for different windows with the way I have it setup(Vertical size can be though). Maybe someone who know more about GUI can fix this but I can't find a way. This is because the close button is the event option and there cannot be duplicates of the event option code in the gui file or it won't show up so the close button has to be outside of the individual custom window containers.
-	
 	4. You can't have two custom windows open at once. Don't try it. I've made triggers specifically so the player isn't able to make this happen.
