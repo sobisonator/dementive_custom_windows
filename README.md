@@ -1,6 +1,8 @@
 # dementive_custom_windows
 Functionality to create custom windows for Imperator: Rome
 
+_Made by Dementive, uploaded by Sobisonator_
+
 This is an example mod that shows how to make and call custom windows of any type with events.
 
 There are two buttons that will open the two example custom windows on the top of the Trade View.
